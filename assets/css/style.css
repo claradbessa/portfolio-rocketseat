@@ -1,0 +1,101 @@
+/* Global */
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+*{
+  margin: 0px; padding: 0px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: currentColor;
+}
+
+h2{
+  text-align: start;
+  padding-bottom: 15px;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "sidebar conteudo";
+  background: var(--body-bg-color);
+}
+
+/* Perfil */
+.perfil, 
+.informacoes, 
+.tecnologias,
+.experiencia,
+.educacao{
+  background: var(--bg-cards);
+  color: var(--text-color);
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 20px;
+}
+
+.perfil img{
+  max-width: 100%;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+
+  border: 3px solid var(--text-color);
+}
+
+.perfil h1{
+  padding-top: 1rem;
+}
+
+.perfil h1, p{
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+/* Informações */
+.item-infos{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: "icon infos";
+  padding-left: 15px;
+}
+
+/* Tecnologias */
+.tecnologias li{
+  background: var(--bg-techs);
+  color: var(--bg-cards);
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 5px;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+
+/* Experiências */
+.experiencia dt{
+  padding-top: 5px;
+}
+
+.experiencia dd{
+  font-size: 0.75rem;
+}
+
+/* Educação */
+.educacao dt{
+  padding-top: 5px;
+}
+
+.educacao dd{
+  font-size: 0.75rem;
+}
