@@ -148,3 +148,9 @@ main{
 .post-conteudo a{
   text-align: end;
 }
+
+/* Footer */
+footer{
+  background: var(--body-bg-color);
+  color: var(--text-color)
+}
