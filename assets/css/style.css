@@ -19,6 +19,9 @@ a{
   color: currentColor;
 }
 
+a:hover{
+  color: var(--bg-techs);
+}
 h2{
   text-align: start;
 }
@@ -37,7 +40,9 @@ main{
 .experiencia,
 .educacao,
 .projetos,
-.proj{
+.proj,
+.posts,
+.post-detalhe{
   background: var(--bg-cards);
   color: var(--text-color);
   padding: 1.5rem;
@@ -101,8 +106,9 @@ main{
   font-size: 0.75rem;
 }
 
-/* Projetos */
-.projetos{
+/* Projetos e Posts*/
+.projetos,
+.posts{
   display: flex;
   justify-content: space-between;
 }
@@ -120,4 +126,25 @@ main{
 
 .proj p{
   padding-top: 15px;
+}
+
+/* Posts */
+.post-detalhe{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: "autor conteudo";
+}
+
+.autor img{
+  max-width: 75%;
+  border-radius: 50%;
+}
+
+.post-conteudo p{
+  text-align: start;
+  padding-top: 15px;
+}
+
+.post-conteudo a{
+  text-align: end;
 }
