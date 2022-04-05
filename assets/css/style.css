@@ -21,7 +21,6 @@ a{
 
 h2{
   text-align: start;
-  padding-bottom: 15px;
 }
 
 main{
@@ -36,7 +35,9 @@ main{
 .informacoes, 
 .tecnologias,
 .experiencia,
-.educacao{
+.educacao,
+.projetos,
+.proj{
   background: var(--bg-cards);
   color: var(--text-color);
   padding: 1.5rem;
@@ -98,4 +99,25 @@ main{
 
 .educacao dd{
   font-size: 0.75rem;
+}
+
+/* Projetos */
+.projetos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.projetos-resumo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.proj img{
+  max-width: 100%;
+  min-height: 282px;
+  border-radius: 20px;
+}
+
+.proj p{
+  padding-top: 15px;
 }
