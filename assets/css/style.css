@@ -154,3 +154,33 @@ footer{
   background: var(--body-bg-color);
   color: var(--text-color)
 }
+
+@media screen and (max-width: 800px){
+  main{
+    grid-template-columns: 100%;
+    justify-content: center;
+    grid-template-areas:
+      "sidebar"
+       "conteudo";
+  }
+  .item-infos{
+    grid-template-columns: 100%;
+    justify-content: center;
+    grid-template-areas:
+      "icon"
+       "infos";
+  }
+  .projetos-resumo{
+    grid-template-columns: 100%;
+  }
+  .projetos-resumo img{
+    height: auto;
+    max-width: 100%;
+  }
+  .post-detalhe{
+    grid-template-columns: 100%;
+  }
+  .autor{
+    display: none;
+  }
+}
